@@ -3,7 +3,7 @@ agent { label 'agent' }
 stages {
     stage('Build') {
         steps {
-            echo 'Building the app on agent....'
+            echo 'Building the app on agent without container....'
             }
     }
     stage('Test') {
