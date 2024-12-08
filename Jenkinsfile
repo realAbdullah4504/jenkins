@@ -1,9 +1,9 @@
 pipeline {
-agent any
+agent { label 'agent' }
 stages {
     stage('Build') {
         steps {
-            echo 'Building the app....'
+            echo 'Building the app on agent....'
             }
     }
     stage('Test') {
