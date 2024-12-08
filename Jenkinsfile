@@ -3,12 +3,12 @@ agent { label 'agent' }
 stages {
     stage('Build') {
         steps {
-            echo 'Building the app..'
+            echo 'Building the app....'
             }
     }
     stage('Test') {
         steps {
-            echo 'Testing the app..'
+            echo 'Testing the app.....'
             }
     }
     stage('Deploy') {
