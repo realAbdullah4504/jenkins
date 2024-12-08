@@ -3,12 +3,17 @@ agent { label 'agent' }
 stages {
     stage('Build') {
         steps {
-            sh 'mvn clean package'
+            echo 'Building the app ....'
             }
-        post {
-            success {
-                archiveArtifacts artifacts: 'target/*.war', fingerprint: true
-            }        
+    }
+    stage('Test') {
+        steps {
+            echo 'Testing the app.....'
+            }
+    }
+    stage('Deploy') {
+        steps {
+            echo 'Deploying the app....'
         }
     }
 }
