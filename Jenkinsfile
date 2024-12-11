@@ -8,7 +8,7 @@ stages {
     }
     stage('Test') {
         steps {
-            echo 'Testing the app.....'
+            echo 'Testing the app with node.....'
             }
     }
     stage('Deploy') {
