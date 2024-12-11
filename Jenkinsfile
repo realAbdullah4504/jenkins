@@ -13,7 +13,7 @@ stages {
     }
     stage('Deploy') {
         steps {
-            echo 'Deploying the app....'
+            echo 'Deploying the app with node....'
         }
     }
 }
